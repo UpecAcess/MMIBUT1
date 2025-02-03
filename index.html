@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit d'Accessibilité</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .low-contrast {
+            color: lightgray;
+            background-color: white;
+        }
+        .hidden-label {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur le site d’audit d’accessibilité</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Problèmes courants</h2>
+            <p class="low-contrast">Ce texte a un contraste faible et est difficile à lire.</p>
+            <img src="image.jpg" alt="">
+            <p>Cette image n'a pas de description alternative.</p>
+        </section>
+        <section>
+            <h2>Formulaire</h2>
+            <form>
+                <label class="hidden-label" for="nom">Nom</label>
+                <input type="text" id="nom" placeholder="Entrez votre nom">
+                <button>Soumettre</button>
+            </form>
+        </section>
+        <section>
+            <h2>Guide d'audit</h2>
+            <p>Voici quelques conseils pour améliorer l'accessibilité du site :</p>
+            <ul>
+                <li>Améliorer le contraste des textes pour une meilleure lisibilité.</li>
+                <li>Ajouter des descriptions alternatives aux images.</li>
+                <li>Associer des labels visibles aux champs de formulaire.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Avant / Après</h2>
+            <p>Documentez ici les modifications apportées pour améliorer l'accessibilité.</p>
+            <textarea rows="5" cols="50" placeholder="Décrivez les changements effectués..."></textarea>
+        </section>
+    </main>
+</body>
+</html>
